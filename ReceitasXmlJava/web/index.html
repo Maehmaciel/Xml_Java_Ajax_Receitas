@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Introdução ao DOM</title>
+		<script src="codigo.js"></script>
+		<link rel="stylesheet" href="estilo.css"><script src="codigo.js"></script>
+                  <style>
+  *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0;
+            background-color: lightgray;
+        }
+        header h1{
+            text-align: center;
+            font-family: 'Cedarville Cursive', cursive;
+        }
+        .conteudo,.cabecalho{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cabecalho{
+            font-family: 'Oswald', sans-serif;
+            background-color: #333;
+            border: solid 5px #4faddb;
+            height: 80px;
+            box-sizing: content-box;
+        }
+        
+        .conteudo{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin:20px;
+        }
+        .menu{
+            vertical-align: top;
+             align-content: center;
+           color:white;
+        }
+        .menu ul{
+        
+            margin: 0px;
+            padding: 0px;
+             display: flex;
+        }
+        .menu li{
+            display: block;
+             margin: 0px 15px;
+        }
+        .cabecalho a{
+            text-decoration: none;
+            color: #eee;
+            font-size: 1em;
+            flex: 1;
+        }
+        .menu a{
+            padding: 15px;
+            background-color: black;
+            border-radius: 5px;
+        }
+ nav ul ul 
+      {
+          position: absolute;
+          display: flex;
+          flex-direction:column;
+           
+      }
+      ul li a{
+        display: none;
+        box-shadow: 5px 10px 8px 3px #888888;
+      }
+      ul li:hover a {
+          display: inline-block;
+          margin-top: 30px;
+          
+          }
+ 
+     
+                  </style>
+	</head>
+        <body onload=criarAjax("NomeReceitas",mostrar)>
+            
+            
+            <header >
+        <h1>Receitas</h1>
+        <section class="cabecalho">
+        <nav class="menu">
+            <ul id="ul">
+                
+            </ul>
+        </nav>
+    </section>
+    </header>
+
+    <main class="conteudo">
+         <div id="la">
+
+         </div>   
+    </main>
+        </body>
+	
+</html>
